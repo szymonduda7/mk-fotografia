@@ -66,22 +66,27 @@
      like Formspree and remove the preventDefault below. */
   var form = document.getElementById("contact-form");
   if (form) {
+    var requiredFields = [
+      { input: form.querySelector("#name"), errorId: "name-error" },
+      { input: form.querySelector("#contact"), errorId: "contact-error" }
+    ];
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var name = form.querySelector("#name");
-      var contact = form.querySelector("#contact");
       var valid = true;
-      [name, contact].forEach(function (f) {
-        if (f && !f.value.trim()) {
-          f.style.borderColor = "var(--gold-deep)";
+      var firstInvalid = null;
+      requiredFields.forEach(function (f) {
+        if (!f.input) return;
+        var errorEl = document.getElementById(f.errorId);
+        var empty = !f.input.value.trim();
+        f.input.setAttribute("aria-invalid", empty ? "true" : "false");
+        if (errorEl) errorEl.textContent = empty ? "To pole jest wymagane." : "";
+        if (empty) {
           valid = false;
-        } else if (f) {
-          f.style.borderColor = "";
+          if (!firstInvalid) firstInvalid = f.input;
         }
       });
       if (!valid) {
-        if (name && !name.value.trim()) name.focus();
-        else if (contact) contact.focus();
+        if (firstInvalid) firstInvalid.focus();
         return;
       }
       var fields = form.querySelector(".form__fields");
