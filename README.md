@@ -36,28 +36,39 @@ reviews.json         – materiał źródłowy z opiniami
   (podpisy w stylu metadanych zdjęcia / kliszy).
 - **Sygnatura:** ciepła poświata światła wokół nagłówka + subtelne ziarno filmu.
 
-## ⚠️ Zdjęcia są tymczasowe (placeholdery)
+## Zdjęcia
 
-Wszystkie zdjęcia w `assets/img/` to nastrojowe ujęcia poglądowe (Unsplash),
-dobrane pod klimat strony. **Przed publikacją podmień je na prawdziwe prace
-Marcina** — wystarczy zachować te same nazwy plików, a nic w kodzie nie trzeba
-zmieniać:
+Na stronie są **prawdziwe prace Marcina** (`assets/img/`). Oryginały dostarczone
+przez klienta leżą w `assets/images/` (pliki `1.jpg`–`17.jpg`) — to materiał
+źródłowy; na stronie używane są ich kopie pod nazwami opisowymi:
 
-| Plik | Gdzie się pojawia | Sugerowane zdjęcie |
-|------|-------------------|--------------------|
-| `hero.jpg` | tło sekcji powitalnej (poziome, szerokie) | mocne ujęcie w złotym świetle |
-| `wedding-couple.jpg` | kafel „Śluby i wesela” + portfolio | para młoda, emocje |
-| `wedding-beach.jpg` | portfolio | para młoda, plener |
-| `portrait.jpg` | kafel „Sesje portretowe” | portret / sesja |
-| `dance.jpg` | kafel „Fotografia taneczna” + portfolio | taniec, ruch |
-| `mountain-adventure.jpg` | kafel „Sesje górskie” + portfolio | szczyt / skała / szlak |
-| `mountain-golden.jpg` | portfolio | góry o zachodzie |
-| `mountain-bluehour.jpg` | tło sekcji kontaktu | góry o zmierzchu |
-| `night-sky.jpg` | portfolio (duży kafel) | noc / gwiazdy |
-| `photographer-gear.jpg` | sekcja „O mnie” | warsztat / kulisy |
+| Plik na stronie | Gdzie się pojawia | Źródło |
+|------|-------------------|--------|
+| `hero.jpg` | tło sekcji powitalnej | `11` — para na łące, Karkonosze |
+| `about.jpg` | sekcja „O mnie” | `8` — ceremonia w kościele |
+| `svc-wedding.jpg` | kafel „Śluby i wesela” | `3` — wesele, emocje |
+| `svc-couple.jpg` | kafel „Sesje narzeczeńskie i plenerowe” | `1` — para w plenerze |
+| `svc-dance.jpg` | kafel „Fotografia taneczna i sceniczna” | `10` — samba |
+| `svc-mountains.jpg` | kafel „Sesje górskie i przygodowe” | `4` — wspinacz na iglicy |
+| `svc-food.jpg` | kafel „Kulinaria i produkt” | `2` — danie |
+| `svc-auto.jpg` | kafel „Motoryzacja i eventy” | `6` — Ferrari |
+| `contact-bg.jpg` | tło sekcji kontaktu | `7` — światło UV |
+| `g-climb.jpg` | portfolio | `16` — wspinaczka |
+| `g-car.jpg` | portfolio | `9` — para w aucie |
+| `g-cocktail.jpg` | portfolio | `15` — drink |
+| `g-details.jpg` | portfolio | `13` — detale |
+| `g-prep.jpg` | portfolio | `17` — przygotowania |
+| `g-aerial.jpg` | portfolio | `14` — akrobatyka |
+| `g-pet.jpg` | portfolio | `12` — pupil |
 
-Jeśli któregoś pliku zabraknie, w jego miejscu pokaże się elegancki gradient
-(strona nigdy nie „rozsypie się” od brakującego obrazka).
+Uwagi:
+- Wszystkie zdjęcia mają **znak wodny** „Marcin Kaźmieruk Fotografia”. Jeśli
+  woli wersje bez znaku lub w wyższej rozdzielczości — wystarczy podmienić pliki,
+  zachowując te same nazwy (nic w kodzie nie trzeba zmieniać).
+- Nieużyte źródło: `assets/images/5.jpg` (sala konferencyjna) — można dorzucić
+  do portfolio jako dodatkowy kafel.
+- Jeśli któregoś pliku zabraknie, w jego miejscu pokaże się elegancki gradient
+  (strona nigdy nie „rozsypie się” od brakującego obrazka).
 
 ## Co warto uzupełnić przed publikacją
 

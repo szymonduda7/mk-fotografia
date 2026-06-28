@@ -1,0 +1,12 @@
+# Local Claude session notes (not for the repo)
+CLAUDE.local.md
+
+# Dependencies
+node_modules/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
