@@ -6,6 +6,16 @@
   <title>Marcin Kaźmieruk Fotografia — fotograf ślubny, Jelenia Góra i Karkonosze</title>
   <meta name="description" content="Marcin Kaźmieruk — fotograf z Jeleniej Góry. #1 Food Photographer w Polsce 2025 (Foodelia). Fotografia kulinarna, śluby, eventy i portret. 5,0 ★ w Google · 100% poleceń. Tel. 505 183 969." />
   <meta name="theme-color" content="#0e1218" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- PRZED PUBLIKACJĄ: wyszukaj i zamień "https://twoja-domena.pl/" w tym pliku,
+       w robots.txt i w sitemap.xml na właściwą, docelową domenę. -->
+  <link rel="canonical" href="https://twoja-domena.pl/" />
+
+  <!-- Lokalne SEO: sygnały geograficzne dla wyszukiwarek i katalogów -->
+  <meta name="geo.region" content="PL-DS" />
+  <meta name="geo.placename" content="Jelenia Góra" />
+  <meta name="ICBM" content="50.9016, 15.7340" />
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" sizes="any" />
@@ -16,26 +26,40 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Marcin Kaźmieruk Fotografia — maluję światłem" />
   <meta property="og:description" content="#1 Food Photographer w Polsce 2025. Kulinaria, śluby, eventy i góry — kadry pełne emocji. Jelenia Góra · Karkonosze. 5,0 ★ Google · 100% poleceń." />
-  <meta property="og:image" content="assets/img/hero.jpg" />
+  <meta property="og:image" content="assets/img/hero.webp" />
+  <meta property="og:url" content="https://twoja-domena.pl/" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="Marcin Kaźmieruk Fotografia" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Marcin Kaźmieruk Fotografia — maluję światłem" />
+  <meta name="twitter:description" content="Fotograf ślubny i portretowy — Jelenia Góra i Karkonosze. 5,0 ★ w Google · 100% poleceń." />
+  <meta name="twitter:image" content="assets/img/hero.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Structured data: local photography business -->
+  <!-- Structured data: local photography business.
+       @type był błędnie ustawiony na "Photograph" (to opisuje pojedyncze zdjęcie,
+       nie firmę) — poprawione na "ProfessionalService", podtyp LocalBusiness,
+       który Google rozpoznaje w lokalnych wynikach wyszukiwania. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Photograph",
+    "@type": "ProfessionalService",
     "name": "Marcin Kaźmieruk Fotografia",
-    "image": "assets/img/hero.jpg",
-    "@id": "",
-    "url": "",
+    "image": "assets/img/hero.webp",
+    "@id": "https://twoja-domena.pl/",
+    "url": "https://twoja-domena.pl/",
     "telephone": "+48505183969",
+    "founder": { "@type": "Person", "name": "Marcin Kaźmieruk" },
     "address": { "@type": "PostalAddress", "addressLocality": "Jelenia Góra", "postalCode": "58-500", "addressCountry": "PL" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 50.9016, "longitude": 15.7340 },
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "131" },
-    "areaServed": "Jelenia Góra, Karkonosze"
+    "areaServed": ["Jelenia Góra", "Karkonosze", "Karpacz", "Wrocław"]
   }
   </script>
 </head>
@@ -71,7 +95,7 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero__bg">
-      <img src="assets/img/hero.jpg" alt="Roześmiana para młoda na łące u podnóża Karkonoszy" fetchpriority="high" />
+      <img src="assets/img/hero.webp" alt="Roześmiana para młoda na łące u podnóża Karkonoszy" fetchpriority="high" />
     </div>
     <div class="hero__glow" aria-hidden="true"></div>
 
@@ -180,7 +204,7 @@
     <div class="container about__grid">
       <div class="about__media reveal">
         <div class="frame">
-          <img src="assets/img/about.jpg" alt="Ceremonia ślubna w zabytkowym kościele, para w drzwiach pełnych światła" loading="lazy" />
+          <img src="assets/img/about.webp" alt="Ceremonia ślubna w zabytkowym kościele, para w drzwiach pełnych światła" loading="lazy" />
         </div>
         <span class="tag">Nikon NPS · 12 lat za obiektywem</span>
       </div>
@@ -229,7 +253,7 @@
 
       <div class="services__grid">
         <article class="service reveal" tabindex="0">
-          <img src="assets/img/svc-wedding.jpg" alt="Roześmiana panna młoda wśród gości na weselu" loading="lazy" />
+          <img src="assets/img/svc-wedding.webp" alt="Roześmiana panna młoda wśród gości na weselu" loading="lazy" />
           <div class="service__body">
             <p class="service__meta">Duet z Magdą · cały dzień</p>
             <h3>Śluby i wesela</h3>
@@ -238,7 +262,7 @@
         </article>
 
         <article class="service reveal" tabindex="0">
-          <img src="assets/img/svc-couple.jpg" alt="Para w objęciach na kwietnej łące o zachodzie słońca" loading="lazy" />
+          <img src="assets/img/svc-couple.webp" alt="Para w objęciach na kwietnej łące o zachodzie słońca" loading="lazy" />
           <div class="service__body">
             <p class="service__meta">Plener · 1–2 h</p>
             <h3>Sesje narzeczeńskie i plenerowe</h3>
@@ -247,7 +271,7 @@
         </article>
 
         <article class="service reveal" tabindex="0">
-          <img src="assets/img/svc-dance.jpg" alt="Tancerka samby w błyszczącym kostiumie w świetle sceny" loading="lazy" />
+          <img src="assets/img/svc-dance.webp" alt="Tancerka samby w błyszczącym kostiumie w świetle sceny" loading="lazy" />
           <div class="service__body">
             <p class="service__meta">Ruch · scena</p>
             <h3>Fotografia taneczna i sceniczna</h3>
@@ -256,7 +280,7 @@
         </article>
 
         <article class="service reveal" tabindex="0">
-          <img src="assets/img/svc-mountains.jpg" alt="Wspinacz z rozłożonymi rękami na szczycie skalnej iglicy" loading="lazy" />
+          <img src="assets/img/svc-mountains.webp" alt="Wspinacz z rozłożonymi rękami na szczycie skalnej iglicy" loading="lazy" />
           <div class="service__body">
             <p class="service__meta">Góry · adrenalina</p>
             <h3>Sesje górskie i przygodowe</h3>
@@ -265,7 +289,7 @@
         </article>
 
         <article class="service reveal" tabindex="0">
-          <img src="assets/img/svc-food.jpg" alt="Eleganckie danie na czarnym talerzu w restauracyjnym świetle" loading="lazy" />
+          <img src="assets/img/svc-food.webp" alt="Eleganckie danie na czarnym talerzu w restauracyjnym świetle" loading="lazy" />
           <div class="service__body">
             <p class="service__meta">Menu · studio</p>
             <h3>Kulinaria i produkt</h3>
@@ -274,7 +298,7 @@
         </article>
 
         <article class="service reveal" tabindex="0">
-          <img src="assets/img/svc-auto.jpg" alt="Czerwone Ferrari w ciemnym studiu" loading="lazy" />
+          <img src="assets/img/svc-auto.webp" alt="Czerwone Ferrari w ciemnym studiu" loading="lazy" />
           <div class="service__body">
             <p class="service__meta">Auto · wnętrza</p>
             <h3>Motoryzacja i eventy</h3>
@@ -332,13 +356,13 @@
       </div>
 
       <div class="gallery reveal">
-        <figure class="shot g-a" tabindex="0"><img src="assets/img/g-climb.jpg" alt="Wspinacz pokonujący skalną ścianę z liną asekuracyjną" loading="lazy" /><figcaption class="cap">Wspinaczka · adrenalina</figcaption></figure>
-        <figure class="shot g-b" tabindex="0"><img src="assets/img/g-car.jpg" alt="Para młoda w zabytkowym samochodzie" loading="lazy" /><figcaption class="cap">Para młoda · auto do ślubu</figcaption></figure>
-        <figure class="shot g-c" tabindex="0"><img src="assets/img/g-cocktail.jpg" alt="Orzeźwiający drink z miętą i jagodami" loading="lazy" /><figcaption class="cap">Drink · karta menu</figcaption></figure>
-        <figure class="shot g-d" tabindex="0"><img src="assets/img/g-details.jpg" alt="Granatowa muszka i spinki pana młodego na korze drzewa" loading="lazy" /><figcaption class="cap">Detale · poranek pana młodego</figcaption></figure>
-        <figure class="shot g-e" tabindex="0"><img src="assets/img/g-prep.jpg" alt="Pan młody poprawiający muszkę przy oknie" loading="lazy" /><figcaption class="cap">Przygotowania · pan młody</figcaption></figure>
-        <figure class="shot g-f" tabindex="0"><img src="assets/img/g-aerial.jpg" alt="Akrobatka na tkaninie powietrznej w leśnej scenerii" loading="lazy" /><figcaption class="cap">Akrobatyka · plener</figcaption></figure>
-        <figure class="shot g-g" tabindex="0"><img src="assets/img/g-pet.jpg" alt="Czekoladowy labrador patrzący w obiektyw" loading="lazy" /><figcaption class="cap">Pupil · sesja w domu</figcaption></figure>
+        <figure class="shot g-a" tabindex="0"><img src="assets/img/g-climb.webp" alt="Wspinacz pokonujący skalną ścianę z liną asekuracyjną" loading="lazy" /><figcaption class="cap">Wspinaczka · adrenalina</figcaption></figure>
+        <figure class="shot g-b" tabindex="0"><img src="assets/img/g-car.webp" alt="Para młoda w zabytkowym samochodzie" loading="lazy" /><figcaption class="cap">Para młoda · auto do ślubu</figcaption></figure>
+        <figure class="shot g-c" tabindex="0"><img src="assets/img/g-cocktail.webp" alt="Orzeźwiający drink z miętą i jagodami" loading="lazy" /><figcaption class="cap">Drink · karta menu</figcaption></figure>
+        <figure class="shot g-d" tabindex="0"><img src="assets/img/g-details.webp" alt="Granatowa muszka i spinki pana młodego na korze drzewa" loading="lazy" /><figcaption class="cap">Detale · poranek pana młodego</figcaption></figure>
+        <figure class="shot g-e" tabindex="0"><img src="assets/img/g-prep.webp" alt="Pan młody poprawiający muszkę przy oknie" loading="lazy" /><figcaption class="cap">Przygotowania · pan młody</figcaption></figure>
+        <figure class="shot g-f" tabindex="0"><img src="assets/img/g-aerial.webp" alt="Akrobatka na tkaninie powietrznej w leśnej scenerii" loading="lazy" /><figcaption class="cap">Akrobatyka · plener</figcaption></figure>
+        <figure class="shot g-g" tabindex="0"><img src="assets/img/g-pet.webp" alt="Czekoladowy labrador patrzący w obiektyw" loading="lazy" /><figcaption class="cap">Pupil · sesja w domu</figcaption></figure>
       </div>
     </div>
   </section>
@@ -403,7 +427,7 @@
   <!-- ============ CONTACT ============ -->
   <section class="section contact" id="kontakt">
     <div class="contact__bg" aria-hidden="true">
-      <img src="assets/img/contact-bg.jpg" alt="" loading="lazy" />
+      <img src="assets/img/contact-bg.webp" alt="" loading="lazy" />
     </div>
     <div class="container contact__grid">
       <div class="contact__intro reveal">
@@ -418,7 +442,7 @@
           </div>
           <div class="detail">
             <span class="detail__k">Lokalizacja</span>
-            <span class="detail__v">Jelenia Góra, 58-500<small>Karkonosze i okolice — dojeżdżam</small></span>
+            <span class="detail__v"><a href="https://www.google.com/maps/search/?api=1&amp;query=Marcin+Ka%C5%BAmieruk+Fotografia+Jelenia+G%C3%B3ra" target="_blank" rel="noopener">Jelenia Góra, 58-500</a><small>Karkonosze i okolice — dojeżdżam</small></span>
           </div>
           <div class="detail">
             <span class="detail__k">Social</span>
