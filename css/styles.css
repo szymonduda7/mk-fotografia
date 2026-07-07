@@ -1042,6 +1042,10 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate
     transition: transform .45s cubic-bezier(.6,0,.2,1);
   }
   body.nav-open .nav.is-mobile { transform: none; }
+  /* .site-header's backdrop-filter creates a new containing block, which would
+     make the fixed .nav.is-mobile position itself against the header bar
+     instead of the viewport once scrolled — drop it while the menu is open */
+  body.nav-open .site-header { backdrop-filter: none; -webkit-backdrop-filter: none; }
   .nav.is-mobile .nav__links {
     display: flex;
     flex-direction: column;
